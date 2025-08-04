@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit your 8 quick relief techniques:"
+            android:textSize="16sp"
+            android:textColor="#1F2937"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Technique 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 1"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 2"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 3"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 4"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 5"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 6 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 6"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 7 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 7"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Technique 8 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8."
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_technique_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter technique 8"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView> 

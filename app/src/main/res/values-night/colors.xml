@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#9B51E0</color>
+    <color name="blue">#4A90E2</color>
+    <color name="darkwhite">#1F2937</color>
+    <color name="ligthBlue">#4F86F7</color>
+    <color name="gray">#9CA3AF</color>
+    
+    <!-- Profile Screen Colors - Dark Theme -->
+    <color name="profile_background">#111827</color>
+    <color name="card_background">#1F2937</color>
+    <color name="text_primary">#F9FAFB</color>
+    <color name="text_secondary">#D1D5DB</color>
+    <color name="text_muted">#9CA3AF</color>
+    <color name="text_disabled">#6B7280</color>
+    <color name="accent_blue">#81D4FA</color>
+    <color name="accent_red">#EF9A9A</color>
+    <color name="danger_red">#DC2626</color>
+    <color name="success_green">#10B981</color>
+    <color name="card_shadow">#374151</color>
+    <color name="tag_red_bg">#7F1D1D</color>
+    <color name="tag_blue_bg">#1E3A8A</color>
+    <color name="progress_bg">#374151</color>
+    <color name="trend_bg">#064E3B</color>
+    
+    <!-- Calm Space Colors - Dark Theme -->
+    <color name="calm_background">#0F172A</color>
+    <color name="quick_calm_bg">#7F1D1D</color>
+    <color name="deep_breathing_bg">#1E3A8A</color>
+    <color name="ambient_sounds_bg">#064E3B</color>
+    <color name="guided_meditation_bg">#581C87</color>
+    <color name="quote_icon_color">#1E3A8A</color>
+    
+    <!-- Ambient Sound Colors - Dark Theme -->
+    <color name="ocean_waves_bg">#1E3A8A</color>
+    <color name="forest_birds_bg">#064E3B</color>
+    <color name="white_noise_bg">#374151</color>
+    <color name="fireplace_bg">#7F1D1D</color>
+    <color name="night_rain_bg">#581C87</color>
+    <color name="mountain_stream_bg">#1E40AF</color>
+    
+    <!-- Updated Ambient Sound Colors - Dark Theme -->
+    <color name="dark_gray">#F9FAFB</color>
+    <color name="medium_gray">#9CA3AF</color>
+    <color name="dark_blue">#60A5FA</color>
+    <color name="pastel_blue">#81D4FA</color>
+    <color name="very_light_gray">#111827</color>
+    
+    <!-- Card Background Colors - Dark Theme -->
+    <color name="card_ocean_waves">#1E3A8A</color>
+    <color name="card_forest_birds">#064E3B</color>
+    <color name="card_white_noise">#374151</color>
+    <color name="card_fireplace">#7F1D1D</color>
+    <color name="card_night_rain">#581C87</color>
+    <color name="card_mountain_stream">#1E40AF</color>
+    
+    <!-- Guided Meditation Colors - Dark Theme -->
+    <color name="pastel_purple">#581C87</color>
+    <color name="meditation_light_blue">#0F172A</color>
+    <color name="meditation_light_purple">#581C87</color>
+    <color name="meditation_accent_blue">#60A5FA</color>
+    <color name="meditation_check_blue">#93C5FD</color>
+    <color name="meditation_card_bg">#1F2937</color>
+    <color name="meditation_icon_blue">#93C5FD</color>
+    <color name="meditation_icon_purple">#C4B5FD</color>
+    
+    <!-- Breathe Screen Colors - Dark Theme -->
+    <color name="breathing_circle_blue">#0F172A</color>
+    <color name="breathing_circle_stroke">#81D4FA</color>
+    <color name="progress_dot_active">#60A5FA</color>
+    <color name="progress_dot_inactive">#374151</color>
+    <color name="emoji_angry_red">#EF4444</color>
+    <color name="emoji_calm_blue">#10B981</color>
+    <color name="emoji_selected_bg">#0F172A</color>
+    <color name="lightbulb_blue">#60A5FA</color>
+    <color name="tips_background">#1F2937</color>
+    
+    <!-- Enhanced Emoji Colors - Dark Theme -->
+    <color name="emoji_upset_blue">#60A5FA</color>
+    <color name="emoji_neutral_yellow">#F59E0B</color>
+    <color name="emoji_better_orange">#F97316</color>
+    <color name="emoji_calm_green">#10B981</color>
+    <color name="emoji_angry_dark_red">#DC2626</color>
+    
+    <!-- New Anger Record Colors - Dark Theme -->
+    <color name="form_background">#1F2937</color>
+    <color name="form_border">#374151</color>
+    <color name="form_text_primary">#F9FAFB</color>
+    <color name="form_text_secondary">#9CA3AF</color>
+    <color name="form_placeholder">#6B7280</color>
+    <color name="button_selected_bg">#60A5FA</color>
+    <color name="button_selected_text">#FFFFFF</color>
+    <color name="button_unselected_bg">#1F2937</color>
+    <color name="button_unselected_text">#D1D5DB</color>
+    <color name="intensity_selected_bg">#60A5FA</color>
+    <color name="intensity_selected_text">#FFFFFF</color>
+    <color name="intensity_unselected_bg">#374151</color>
+    <color name="intensity_unselected_text">#D1D5DB</color>
+    <color name="checkbox_checked">#60A5FA</color>
+    <color name="checkbox_unchecked">#4B5563</color>
+    <color name="chip_selected_bg">#1E3A8A</color>
+    <color name="chip_selected_text">#93C5FD</color>
+    <color name="chip_unselected_bg">#1F2937</color>
+    <color name="chip_unselected_text">#D1D5DB</color>
+    <color name="save_button_bg">#60A5FA</color>
+    <color name="save_button_text">#FFFFFF</color>
+    
+    <!-- Now Playing Colors - Dark Theme -->
+    <color name="player_background">#1F2937</color>
+    <color name="player_text_primary">#F9FAFB</color>
+    <color name="player_text_secondary">#9CA3AF</color>
+    <color name="player_progress_bg">#374151</color>
+    <color name="player_progress_fill">#60A5FA</color>
+    <color name="player_control_bg">#F9FAFB</color>
+    <color name="player_control_icon">#1F2937</color>
+    <color name="player_secondary_control">#9CA3AF</color>
+    <color name="track_item_bg">#111827</color>
+    <color name="track_item_border">#374151</color>
+    
+    <!-- Focus Timer Colors - Dark Theme -->
+    <color name="focus_background">#0F172A</color>
+    <color name="focus_text_primary">#F9FAFB</color>
+    <color name="focus_text_secondary">#9CA3AF</color>
+    <color name="focus_purple_light">#581C87</color>
+    <color name="focus_purple_medium">#7C3AED</color>
+    <color name="focus_purple_dark">#A855F7</color>
+    <color name="focus_timer_circle_bg">#374151</color>
+    <color name="focus_timer_stroke">#7C3AED</color>
+    <color name="focus_button_selected_bg">#581C87</color>
+    <color name="focus_button_selected_text">#A855F7</color>
+    <color name="focus_button_unselected_bg">#1F2937</color>
+    <color name="focus_button_unselected_border">#581C87</color>
+    <color name="focus_button_unselected_text">#F9FAFB</color>
+    <color name="focus_play_button_bg">#581C87</color>
+    <color name="focus_play_button_stroke">#A855F7</color>
+    <color name="focus_reset_button_bg">#1F2937</color>
+    <color name="focus_reset_button_stroke">#581C87</color>
+
+    <!-- Welcome Screen Colors - Dark Theme -->
+    <color name="welcome_background">#111827</color>
+    <color name="app_name_color">#F9FAFB</color>
+    <color name="tagline_color">#9CA3AF</color>
+    <color name="welcome_text_color">#F9FAFB</color>
+    <color name="feature_icon_color">#60A5FA</color>
+    <color name="feature_text_color">#D1D5DB</color>
+    <color name="bottom_text_color">#6B7280</color>
+    <color name="gradient_blue_start">#60A5FA</color>
+    <color name="gradient_purple_end">#A855F7</color>
+</resources> 

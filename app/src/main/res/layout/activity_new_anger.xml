@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background"
+    android:fillViewport="true"
+    tools:context=".NewAngerRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back button"
+                android:focusable="true"
+                android:clickable="true"
+                app:tint="@color/form_text_primary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Anger Record"
+                android:textColor="@color/form_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/save_button_bg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:focusable="true"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <!-- When did it happen? Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When did it happen?"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/btnToday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Today"
+                android:textSize="16dp"
+                android:textColor="@color/button_unselected_text"
+                android:background="@drawable/button_unselected_bg"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="8dp"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:fontFamily="sans-serif" />
+
+            <Button
+                android:id="@+id/btnNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Now"
+                android:textSize="16dp"
+                android:textColor="@color/button_unselected_text"
+                android:background="@drawable/button_unselected_bg"
+                android:layout_marginStart="8dp"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawablePadding="8dp"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <!-- How intense was your anger? Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How intense was your anger?"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnIntensity1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/intensity_unselected_text"
+                android:background="@drawable/intensity_circle_unselected"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnIntensity2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="2"
+                android:gravity="center"
+                android:textColor="@color/intensity_unselected_text"
+                android:background="@drawable/intensity_circle_unselected"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnIntensity3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="3"
+                android:gravity="center"
+                android:textColor="@color/intensity_selected_text"
+                android:background="@drawable/intensity_circle_selected"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnIntensity4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="4"
+                android:gravity="center"
+                android:textColor="@color/intensity_unselected_text"
+                android:background="@drawable/intensity_circle_unselected"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnIntensity5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="5"
+                android:gravity="center"
+                android:textColor="@color/intensity_unselected_text"
+                android:background="@drawable/intensity_circle_unselected"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mild"
+                android:textColor="@color/form_text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginEnd="130dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moderate"
+                android:textColor="@color/form_text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginEnd="115dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severe"
+                android:textColor="@color/form_text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <!-- What triggered your anger? Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What triggered your anger?"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etTrigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="16dp"
+            android:hint="Describe what caused your anger..."
+            android:textColorHint="@color/form_placeholder"
+            android:textColor="@color/form_text_primary"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:minLines="3"
+            android:maxLines="5"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Physical symptoms experienced Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physical symptoms experienced:"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <!-- Increased heart rate -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/symptom_item_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/checkboxHeartRate"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/checkbox_checked"
+                    android:contentDescription="Increased heart rate checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Increased heart rate"
+                    android:textColor="@color/form_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+            <!-- Muscle tension -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/symptom_item_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/checkboxMuscleTension"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/checkbox_unchecked"
+                    android:contentDescription="Muscle tension checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Muscle tension"
+                    android:textColor="@color/form_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+            <!-- Sweating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/symptom_item_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/checkboxSweating"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/checkbox_checked"
+                    android:contentDescription="Sweating checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sweating"
+                    android:textColor="@color/form_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+            <!-- Clenching fists -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/symptom_item_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/checkboxClenchingFists"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/checkbox_unchecked"
+                    android:contentDescription="Clenching fists checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clenching fists"
+                    android:textColor="@color/form_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+            <!-- Headache -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/symptom_item_bg"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/checkboxHeadache"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/checkbox_unchecked"
+                    android:contentDescription="Headache checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Headache"
+                    android:textColor="@color/form_text_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- What helped you manage it? Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What helped you manage it?"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chipDeepBreathing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deep breathing"
+                    android:textSize="10dp"
+                    android:textColor="@color/chip_selected_text"
+                    android:background="@drawable/chip_selected_bg"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:minHeight="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif" />
+
+                <Button
+                    android:id="@+id/chipWalkingAway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Walking away"
+                    android:textSize="10dp"
+                    android:textColor="@color/chip_unselected_text"
+                    android:background="@drawable/chip_unselected_bg"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:minHeight="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif" />
+
+                <Button
+                    android:id="@+id/chipCountingTo10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_selected_bg"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10dp"
+                    android:minHeight="36dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:text="Counting to 10"
+                    android:textColor="@color/chip_selected_text" />
+
+                <Button
+                    android:id="@+id/chipTalkingToSomeone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Talking to someone"
+                    android:textSize="10dp"
+                    android:textColor="@color/chip_unselected_text"
+                    android:background="@drawable/chip_unselected_bg"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:minHeight="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif" />
+
+                <Button
+                    android:id="@+id/chipExercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercise"
+                    android:textSize="10dp"
+                    android:textColor="@color/chip_unselected_text"
+                    android:background="@drawable/chip_unselected_bg"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:minHeight="36dp"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Additional notes Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional notes"
+            android:textColor="@color/form_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etAdditionalNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="16dp"
+            android:hint="Any other details you want to record..."
+            android:textColorHint="@color/form_placeholder"
+            android:textColor="@color/form_text_primary"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:minLines="3"
+            android:maxLines="5"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    
+    <!-- Face Circle -->
+    <path
+        android:fillColor="@color/emoji_better_orange"
+        android:pathData="M16,16 m-12,0 a12,12 0 1,1 24,0 a12,12 0 1,1 -24,0" />
+    
+    <!-- Left Eye -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M10,12 L14,12 L14,14 L10,14 Z" />
+    
+    <!-- Right Eye -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M18,12 L22,12 L22,14 L18,14 Z" />
+    
+    <!-- Slight Smile -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M12,20 Q16,22 20,20 L20,21 Q16,23 12,21 Z" />
+        
+</vector> 

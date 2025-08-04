@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    
+    <!-- Graph background -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="M4,24h24v4H4z"/>
+    
+    <!-- Graph line -->
+    <path
+        android:fillColor="#3B82F6"
+        android:strokeColor="#3B82F6"
+        android:strokeWidth="2"
+        android:pathData="M6,20L10,16L14,18L18,12L22,14L26,8"/>
+    
+    <!-- Data points -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M10,16m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M14,18m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M18,12m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M22,14m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M26,8m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+</vector> 

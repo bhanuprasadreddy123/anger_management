@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    
+    <!-- Circular Arrow -->
+    <path
+        android:fillColor="@color/focus_text_primary"
+        android:pathData="M10,2 C14.42,2 18,5.58 18,10 C18,14.42 14.42,18 10,18 C5.58,18 2,14.42 2,10 C2,5.58 5.58,2 10,2 Z"
+        android:strokeColor="@color/focus_text_primary"
+        android:strokeWidth="1.5" />
+    
+    <!-- Arrow Head -->
+    <path
+        android:fillColor="@color/focus_text_primary"
+        android:pathData="M10,6 L14,10 L10,14 L10,12 L6,12 L6,8 L10,8 Z" />
+        
+</vector> 

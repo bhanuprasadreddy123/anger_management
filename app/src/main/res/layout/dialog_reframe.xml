@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How can you reframe this situation?"
+        android:textSize="16sp"
+        android:textColor="#1F2937"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_reframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="This is temporary, not permanent"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="4" />
+
+</LinearLayout> 

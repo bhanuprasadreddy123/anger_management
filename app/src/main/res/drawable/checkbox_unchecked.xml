@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    
+    <!-- Checkbox Border -->
+    <path
+        android:fillColor="@color/white"
+        android:strokeColor="@color/checkbox_unchecked"
+        android:strokeWidth="2"
+        android:pathData="M2,2 L18,2 L18,18 L2,18 Z" />
+        
+</vector> 

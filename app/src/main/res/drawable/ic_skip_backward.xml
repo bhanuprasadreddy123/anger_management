@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- First Arrow -->
+    <path
+        android:fillColor="@color/player_secondary_control"
+        android:pathData="M8,12 L14,6 L14,18 Z" />
+    
+    <!-- Second Arrow -->
+    <path
+        android:fillColor="@color/player_secondary_control"
+        android:pathData="M16,12 L22,6 L22,18 Z" />
+        
+</vector> 

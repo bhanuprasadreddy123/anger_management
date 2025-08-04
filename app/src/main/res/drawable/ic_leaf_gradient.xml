@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Rounded Square Background with Gradient -->
+    <path
+        android:fillColor="#E8F4FD"
+        android:pathData="M10,10 C10,4.48 14.48,0 20,0 L100,0 C105.52,0 110,4.48 110,10 L110,110 C110,115.52 105.52,120 100,120 L20,120 C14.48,120 10,115.52 10,110 Z" />
+
+    <!-- Leaf Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,30 C60,30 50,40 45,50 C40,60 40,70 45,80 C50,90 60,100 60,100 C60,100 70,90 75,80 C80,70 80,60 75,50 C70,40 60,30 60,30 Z" />
+
+    <!-- Leaf Vein -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M60,30 L60,100" />
+
+</vector> 

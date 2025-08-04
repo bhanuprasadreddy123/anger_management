@@ -1,0 +1,11 @@
+This is a placeholder for the peaceful_mind.mp3 audio file.
+In a real implementation, this would be an actual MP3 file containing calming music.
+
+The app will look for files like:
+- peaceful_mind.mp3
+- let_it_go.mp3
+- inner_peace.mp3
+- breathe_deep.mp3
+- etc.
+
+For now, the app will use fallback calming tones when these files are not found. 

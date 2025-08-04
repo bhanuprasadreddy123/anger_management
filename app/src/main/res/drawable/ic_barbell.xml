@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    
+    <!-- Center bar -->
+    <path
+        android:fillColor="#9CA3AF"
+        android:pathData="M8,12h16v2H8z"/>
+    
+    <!-- Left weight -->
+    <path
+        android:fillColor="#1F2937"
+        android:pathData="M6,10h4v6H6z"/>
+    
+    <!-- Right weight -->
+    <path
+        android:fillColor="#1F2937"
+        android:pathData="M22,10h4v6h-4z"/>
+    
+    <!-- Left weight holder -->
+    <path
+        android:fillColor="#6B7280"
+        android:pathData="M4,8h6v10H4z"/>
+    
+    <!-- Right weight holder -->
+    <path
+        android:fillColor="#6B7280"
+        android:pathData="M22,8h6v10h-6z"/>
+</vector> 

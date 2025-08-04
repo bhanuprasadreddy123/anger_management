@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Sky Gradient -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M0,0 L60,0 L60,30 L0,30 Z" />
+    
+    <!-- Sun -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M30,10 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0" />
+    
+    <!-- Ocean -->
+    <path
+        android:fillColor="#006994"
+        android:pathData="M0,30 L60,30 L60,60 L0,60 Z" />
+    
+    <!-- Wave 1 -->
+    <path
+        android:fillColor="#0080FF"
+        android:pathData="M0,35 Q15,30 30,35 Q45,40 60,35 L60,40 Q45,45 30,40 Q15,35 0,40 Z" />
+    
+    <!-- Wave 2 -->
+    <path
+        android:fillColor="#0099CC"
+        android:pathData="M0,45 Q15,40 30,45 Q45,50 60,45 L60,50 Q45,55 30,50 Q15,45 0,50 Z" />
+    
+    <!-- Wave 3 -->
+    <path
+        android:fillColor="#00BFFF"
+        android:pathData="M0,55 Q15,50 30,55 Q45,60 60,55 L60,60 Q45,65 30,60 Q15,55 0,60 Z" />
+        
+</vector> 

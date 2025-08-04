@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are 3 things going right in your life?"
+        android:textSize="16sp"
+        android:textColor="#1F2937"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/et_gratitude_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1. Something positive..."
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_gratitude_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2. Another good thing..."
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_gratitude_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="3. One more positive aspect..."
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout> 

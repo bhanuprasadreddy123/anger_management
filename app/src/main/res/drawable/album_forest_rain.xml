@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Sky -->
+    <path
+        android:fillColor="#4A5568"
+        android:pathData="M0,0 L60,0 L60,40 L0,40 Z" />
+    
+    <!-- Rain Drops -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M10,5 L12,5 L12,15 L10,15 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M20,8 L22,8 L22,18 L20,18 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M30,3 L32,3 L32,13 L30,13 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M40,6 L42,6 L42,16 L40,16 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M50,4 L52,4 L52,14 L50,14 Z" />
+    
+    <!-- Forest Ground -->
+    <path
+        android:fillColor="#2D5016"
+        android:pathData="M0,40 L60,40 L60,60 L0,60 Z" />
+    
+    <!-- Tree 1 -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M15,35 Q20,25 25,35 Q30,45 35,35 L35,45 L15,45 Z" />
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M23,45 L27,45 L27,50 L23,50 Z" />
+    
+    <!-- Tree 2 -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M35,30 Q40,20 45,30 Q50,40 55,30 L55,40 L35,40 Z" />
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M43,40 L47,40 L47,45 L43,45 Z" />
+    
+    <!-- Tree 3 -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M5,32 Q10,22 15,32 Q20,42 25,32 L25,42 L5,42 Z" />
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M13,42 L17,42 L17,47 L13,47 Z" />
+        
+</vector> 

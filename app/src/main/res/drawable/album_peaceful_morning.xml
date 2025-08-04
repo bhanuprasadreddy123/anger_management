@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M0,0 L200,0 L200,200 L0,200 Z" />
+    
+    <!-- Window with Blinds -->
+    <path
+        android:fillColor="#E0E7FF"
+        android:pathData="M140,20 L180,20 L180,80 L140,80 Z" />
+    
+    <!-- Blind Lines -->
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,25 L180,25 L180,27 L140,27 Z" />
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,35 L180,35 L180,37 L140,37 Z" />
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,45 L180,45 L180,47 L140,47 Z" />
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,55 L180,55 L180,57 L140,57 Z" />
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,65 L180,65 L180,67 L140,67 Z" />
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M140,75 L180,75 L180,77 L140,77 Z" />
+    
+    <!-- Wooden Table -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M20,120 L180,120 L180,140 L20,140 Z" />
+    
+    <!-- Keyboard -->
+    <path
+        android:fillColor="#2D3748"
+        android:pathData="M30,100 L80,100 L80,115 L30,115 Z" />
+    
+    <!-- Keyboard Keys -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,105 L45,105 L45,110 L35,110 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,105 L60,105 L60,110 L50,110 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M65,105 L75,105 L75,110 L65,110 Z" />
+    
+    <!-- Microphone -->
+    <path
+        android:fillColor="#4A5568"
+        android:pathData="M100,110 L110,110 L110,130 L100,130 Z" />
+    <path
+        android:fillColor="#2D3748"
+        android:pathData="M95,130 L115,130 L115,135 L95,135 Z" />
+    
+    <!-- Guitar 1 -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M150,90 L160,90 L160,140 L150,140 Z" />
+    <path
+        android:fillColor="#654321"
+        android:pathData="M145,85 L165,85 L165,95 L145,95 Z" />
+    
+    <!-- Guitar 2 -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M160,80 L170,80 L170,130 L160,130 Z" />
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M155,75 L175,75 L175,85 L155,85 Z" />
+    
+    <!-- Guitar Strings -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M152,90 L158,90 L158,91 L152,91 Z" />
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M152,95 L158,95 L158,96 L152,96 Z" />
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M152,100 L158,100 L158,101 L152,101 Z" />
+        
+</vector> 
