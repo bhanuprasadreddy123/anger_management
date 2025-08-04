@@ -1,762 +1,505 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
-
-    <!-- Status Bar -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        android:background="#FFFFFF">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="9:41"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#1F2937"
-            android:fontFamily="sans-serif-medium" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:src="@drawable/ic_signal"
-                android:layout_marginEnd="4dp"
-                android:contentDescription="Signal" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:src="@drawable/ic_wifi"
-                android:layout_marginEnd="4dp"
-                android:contentDescription="WiFi" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="12dp"
-                android:src="@drawable/ic_battery"
-                android:contentDescription="Battery" />
-        </LinearLayout>
-    </LinearLayout>
+    android:background="#F5F5F5">
 
     <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:padding="16dp"
         android:background="#FFFFFF">
 
-        <ImageView
-            android:id="@+id/btn_back"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_arrow_back"
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="Back"
+            android:textSize="16sp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:padding="4dp"
-            android:contentDescription="Back" />
+            android:clickable="true"
+            android:focusable="true" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp">
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Anger Management"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#1F2937"
-                android:fontFamily="sans-serif-medium" />
+                android:textColor="#333333" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Records"
                 android:textSize="14sp"
-                android:textColor="#6B7280"
-                android:fontFamily="sans-serif" />
+                android:textColor="#666666" />
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_calendar"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="Calendar" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_arrow_forward"
-            android:contentDescription="Forward" />
+        <Button
+            android:id="@+id/btnCalendar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="Cal"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
 
-    <!-- Content -->
+    <!-- Main Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true">
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
             <!-- This Week's Overview -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="24dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="This Week's Overview"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#1F2937"
-                        android:fontFamily="sans-serif-medium"
-                        android:layout_marginBottom="8dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4 Incidents recorded"
-                        android:textSize="14sp"
-                        android:textColor="#6B7280"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="4dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Average Intensity: Medium"
-                        android:textSize="14sp"
-                        android:textColor="#6B7280"
-                        android:fontFamily="sans-serif" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/ic_graph_up"
-                    android:contentDescription="Graph" />
-            </LinearLayout>
-
-            <!-- Recent Records -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recent Records"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#1F2937"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Record Cards -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginBottom="24dp">
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
 
-                <!-- First Record -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="1dp"
-                    app:cardBackgroundColor="#F9FAFB">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="16dp"
-                        android:gravity="center_vertical">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical"
-                                android:layout_marginBottom="4dp">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_clock"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Time" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Today, 2:30 PM"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold"
-                                    android:textColor="#1F2937"
-                                    android:fontFamily="sans-serif-medium" />
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Work deadline pressure"
-                                android:textSize="14sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_location"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Location" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Office"
-                                    android:textSize="12sp"
-                                    android:textColor="#9CA3AF"
-                                    android:fontFamily="sans-serif" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:background="@drawable/circle_red"
-                            android:layout_marginStart="16dp" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- Second Record -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="1dp"
-                    app:cardBackgroundColor="#F9FAFB">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="16dp"
-                        android:gravity="center_vertical">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical"
-                                android:layout_marginBottom="4dp">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_clock"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Time" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Yesterday, 4:15 PM"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold"
-                                    android:textColor="#1F2937"
-                                    android:fontFamily="sans-serif-medium" />
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Traffic jam"
-                                android:textSize="14sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_location"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Location" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Highway"
-                                    android:textSize="12sp"
-                                    android:textColor="#9CA3AF"
-                                    android:fontFamily="sans-serif" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:background="@drawable/circle_yellow"
-                            android:layout_marginStart="16dp" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- Third Record -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="1dp"
-                    app:cardBackgroundColor="#F9FAFB">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="16dp"
-                        android:gravity="center_vertical">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical"
-                                android:layout_marginBottom="4dp">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_clock"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Time" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="2 days ago, 6:45 PM"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold"
-                                    android:textColor="#1F2937"
-                                    android:fontFamily="sans-serif-medium" />
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Family discussion"
-                                android:textSize="14sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical">
-
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:src="@drawable/ic_location"
-                                    android:layout_marginEnd="8dp"
-                                    android:contentDescription="Location" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Home"
-                                    android:textSize="12sp"
-                                    android:textColor="#9CA3AF"
-                                    android:fontFamily="sans-serif" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:background="@drawable/circle_green"
-                            android:layout_marginStart="16dp" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <!-- Common Triggers -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Common Triggers"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#1F2937"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginBottom="12dp" />
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:scrollbars="none">
-
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="This Week's Overview"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
 
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Work Stress"
-                        android:textSize="14sp"
-                        android:textColor="#1F2937"
-                        android:backgroundTint="#DBEAFE"
-                        app:chipBackgroundColor="#DBEAFE"
-                        app:chipMinHeight="32dp"
-                        android:layout_marginEnd="8dp" />
-
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Traffic"
-                        android:textSize="14sp"
-                        android:textColor="#6B7280"
-                        android:backgroundTint="#F3F4F6"
-                        app:chipBackgroundColor="#F3F4F6"
-                        app:chipMinHeight="32dp"
-                        android:layout_marginEnd="8dp" />
-
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Family Issues"
-                        android:textSize="14sp"
-                        android:textColor="#6B7280"
-                        android:backgroundTint="#F3F4F6"
-                        app:chipBackgroundColor="#F3F4F6"
-                        app:chipMinHeight="32dp"
-                        android:layout_marginEnd="8dp" />
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_more"
-                        android:contentDescription="More" />
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <!-- Coping Methods -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coping Methods"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#1F2937"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginBottom="12dp" />
-
-            <!-- Coping Methods Grid -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="24dp">
-
-                <!-- First Row -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginBottom="12dp">
+                    android:gravity="center_vertical">
 
-                    <!-- Deep Breathing -->
-                    <androidx.cardview.widget.CardView
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginEnd="6dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="1dp"
-                        app:cardBackgroundColor="#F9FAFB">
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp"
-                            android:gravity="center">
+                            android:text="4 Incidents recorded"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
 
-                            <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
-                                android:src="@drawable/ic_breathing"
-                                android:layout_marginBottom="8dp"
-                                android:contentDescription="Breathing" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average intensity: Medium"
+                            android:textSize="14sp"
+                            android:textColor="#666666"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Deep Breathing"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="#1F2937"
-                                android:fontFamily="sans-serif-medium"
-                                android:layout_marginBottom="4dp" />
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="Up"
+                        android:textSize="16sp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="12 times"
-                                android:textSize="12sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
+            <!-- Recent Records -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="85% success"
-                                android:textSize="12sp"
-                                android:textColor="#3B82F6"
-                                android:fontFamily="sans-serif-medium" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Records"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
 
-                    <!-- Time-out -->
-                    <androidx.cardview.widget.CardView
+                <!-- Record 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="6dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="1dp"
-                        app:cardBackgroundColor="#F9FAFB">
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp"
-                            android:gravity="center">
+                            android:text="Work deadline pressure"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
 
-                            <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
-                                android:src="@drawable/ic_timer"
-                                android:layout_marginBottom="8dp"
-                                android:contentDescription="Timer" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today, 2:30 PM • Office"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Time-out"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="#1F2937"
-                                android:fontFamily="sans-serif-medium"
-                                android:layout_marginBottom="4dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="8 times"
-                                android:textSize="12sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="80% success"
-                                android:textSize="12sp"
-                                android:textColor="#3B82F6"
-                                android:fontFamily="sans-serif-medium" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="#F44336"
+                        android:layout_gravity="center_vertical" />
                 </LinearLayout>
 
-                <!-- Second Row -->
+                <!-- Record 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Traffic jam"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yesterday, 4:15 PM • Highway"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="#FFC107"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <!-- Record 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family discussion"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 days ago, 6:45 PM • Home"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="#4CAF50"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Common Triggers -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Common Triggers"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <!-- Walking -->
-                    <androidx.cardview.widget.CardView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#2196F3"
+                        android:padding="8dp"
+                        android:text="Work Stress"
+                        android:textColor="#212121"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#2196F3"
+                        android:padding="8dp"
+                        android:text="Traffic"
+                        android:textColor="#212121"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#2196F3"
+                        android:padding="8dp"
+                        android:text="Family Issues"
+                        android:textColor="#212121"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#2196F3"
+                        android:padding="8dp"
+                        android:text="Sleep"
+                        android:textColor="#212121"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Coping Methods -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coping Methods"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Deep Breathing -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="DB"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:background="#4CAF50"
+                        android:textColor="#FFFFFF" />
+
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginEnd="6dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="1dp"
-                        app:cardBackgroundColor="#F9FAFB">
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp"
-                            android:gravity="center">
+                            android:text="Deep Breathing"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
 
-                            <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
-                                android:src="@drawable/ic_walking"
-                                android:layout_marginBottom="8dp"
-                                android:contentDescription="Walking" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12 times • 85% success"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Walking"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="#1F2937"
-                                android:fontFamily="sans-serif-medium"
-                                android:layout_marginBottom="4dp" />
+                <!-- Time-out -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8"
+                    android:layout_marginBottom="8dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="5 times"
-                                android:textSize="12sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="TO"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:background="#FF9800"
+                        android:textColor="#FFFFFF" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="75% success"
-                                android:textSize="12sp"
-                                android:textColor="#3B82F6"
-                                android:fontFamily="sans-serif-medium" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <!-- Meditation -->
-                    <androidx.cardview.widget.CardView
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="6dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="1dp"
-                        app:cardBackgroundColor="#F9FAFB">
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp"
-                            android:gravity="center">
+                            android:text="Time-out"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
 
-                            <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
-                                android:src="@drawable/ic_meditation"
-                                android:layout_marginBottom="8dp"
-                                android:contentDescription="Meditation" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8 times • 90% success"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Meditation"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="#1F2937"
-                                android:fontFamily="sans-serif-medium"
-                                android:layout_marginBottom="4dp" />
+                <!-- Walking -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8"
+                    android:layout_marginBottom="8dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="3 times"
-                                android:textSize="12sp"
-                                android:textColor="#6B7280"
-                                android:fontFamily="sans-serif"
-                                android:layout_marginBottom="4dp" />
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="W"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:background="#2196F3"
+                        android:textColor="#FFFFFF" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="80% success"
-                                android:textSize="12sp"
-                                android:textColor="#3B82F6"
-                                android:fontFamily="sans-serif-medium" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Walking"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 times • 75% success"
+                            android:textSize="14sp"
+                            android:textColor="#666666"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Meditation -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="#F8F8F8">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:text="M"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:background="#9C27B0"
+                        android:textColor="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meditation"
+                            android:textSize="16sp"
+                            android:textColor="#333333"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 times • 80% success"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -769,18 +512,16 @@
         android:padding="16dp"
         android:background="#FFFFFF">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_add_record"
+        <Button
+            android:id="@+id/btnAddRecord"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:background="#2196F3"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
             android:text="Add New Record"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:backgroundTint="#3B82F6"
-            app:cornerRadius="8dp"
-            app:icon="@drawable/ic_add"
-            app:iconGravity="textStart"
-            app:iconTint="#FFFFFF" />
+            android:textColor="#212121"
+            android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout> 

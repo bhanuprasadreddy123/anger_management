@@ -86,16 +86,8 @@ class TipPracticeActivity : AppCompatActivity() {
     }
     
     private fun showMuscleRelaxationDialog() {
-        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle("Progressive Muscle Relaxation")
-            .setMessage("This exercise helps you release tension from head to toe.")
-            .setPositiveButton("Start Session") { _, _ ->
-                // Start guided session
-            }
-            .setNegativeButton("Cancel", null)
-            .create()
-        
-        dialog.show()
+        val intent = Intent(this, CalmingMusicActivity::class.java)
+        startActivity(intent)
     }
     
     private fun showPhysicalActivityOptions() {
@@ -104,11 +96,48 @@ class TipPracticeActivity : AppCompatActivity() {
         val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
             .setTitle("Choose Physical Activity")
             .setItems(options) { _, which ->
-                // Handle selection
+                when (which) {
+                    0 -> startQuickWalk()
+                    1 -> startStretching()
+                    2 -> startDanceBreak()
+                    3 -> startJumpingJacks()
+                }
             }
             .setNegativeButton("Cancel", null)
             .create()
         
         dialog.show()
+    }
+    
+    private fun startQuickWalk() {
+        val intent = Intent(this, PhysicalActivityGuideActivity::class.java)
+        intent.putExtra("activity_type", "walk")
+        intent.putExtra("activity_title", "Quick Walk")
+        intent.putExtra("activity_description", "A 5-minute walk to clear your mind and release tension")
+        startActivity(intent)
+    }
+    
+    private fun startStretching() {
+        val intent = Intent(this, PhysicalActivityGuideActivity::class.java)
+        intent.putExtra("activity_type", "stretch")
+        intent.putExtra("activity_title", "Stretching")
+        intent.putExtra("activity_description", "Gentle stretches to release muscle tension")
+        startActivity(intent)
+    }
+    
+    private fun startDanceBreak() {
+        val intent = Intent(this, PhysicalActivityGuideActivity::class.java)
+        intent.putExtra("activity_type", "dance")
+        intent.putExtra("activity_title", "Dance Break")
+        intent.putExtra("activity_description", "Move your body to upbeat music for 3 minutes")
+        startActivity(intent)
+    }
+    
+    private fun startJumpingJacks() {
+        val intent = Intent(this, PhysicalActivityGuideActivity::class.java)
+        intent.putExtra("activity_type", "jumping")
+        intent.putExtra("activity_title", "Jumping Jacks")
+        intent.putExtra("activity_description", "Quick cardio exercise to boost energy and mood")
+        startActivity(intent)
     }
 }

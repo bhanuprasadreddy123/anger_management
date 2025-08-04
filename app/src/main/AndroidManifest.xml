@@ -99,6 +99,9 @@
         <activity
             android:name=".CalmSpaceActivity"
             android:exported="false" />
+        <activity
+            android:name=".MyRecordsActivity"
+            android:exported="false" />
 
         <activity
             android:name=".GuidedMeditationActivity"
@@ -158,8 +161,11 @@
         <activity
             android:name=".BreathingExerciseActivity"
             android:exported="false" />
-                        <activity
-                    android:name=".ReframePerspectiveActivity"
+        <activity
+            android:name=".PhysicalActivityGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReframePerspectiveActivity"
                     android:exported="false" />
                 <activity
                     android:name=".JoggingActivity"

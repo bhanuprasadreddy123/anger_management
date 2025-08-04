@@ -199,11 +199,15 @@ class TrackMoodActivity : AppCompatActivity() {
                         }
                     }
                     "Angry" -> {
-                        android.widget.Toast.makeText(this, "Angry dot clicked - would set intensity", android.widget.Toast.LENGTH_SHORT).show()
-                        if (selectedMood != mood) {
-                            selectMood(mood)
+                        android.widget.Toast.makeText(this, "Angry dot clicked - navigating to My Records", android.widget.Toast.LENGTH_SHORT).show()
+                        try {
+                            val intent = Intent(this, MyRecordsActivity::class.java)
+                            startActivity(intent)
+                            android.widget.Toast.makeText(this, "Navigation to My Records successful!", android.widget.Toast.LENGTH_SHORT).show()
+                        } catch (e: Exception) {
+                            android.widget.Toast.makeText(this, "Navigation failed: ${e.message}", android.widget.Toast.LENGTH_LONG).show()
+                            e.printStackTrace()
                         }
-                        selectIntensity(index + 1, dots)
                     }
                 }
             }

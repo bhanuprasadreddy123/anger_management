@@ -46,11 +46,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Enter your email"
+        android:hint=" Enter your email"
         android:textSize="18dp"
         android:inputType="textEmailAddress"
         android:layout_marginTop="32dp"
-        android:background="@drawable/rounded_corner" />
+        android:background="@drawable/rounded_corner"
+        android:textColor="#666666"
+        android:textColorHint="#666666"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical" />
 
 
     <EditText

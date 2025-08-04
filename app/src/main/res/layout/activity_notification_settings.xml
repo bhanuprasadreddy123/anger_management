@@ -36,9 +36,15 @@
             android:textColor="#333333"
             android:gravity="center" />
 
-        <View
+        <ImageButton
+            android:id="@+id/btnHelp"
             android:layout_width="48dp"
-            android:layout_height="48dp" />
+            android:layout_height="48dp"
+            android:src="@drawable/ic_info"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="#666666" />
     </LinearLayout>
 
     <ScrollView
@@ -143,37 +149,6 @@
                     android:layout_height="1dp"
                     android:background="#F0F0F0"
                     android:layout_marginStart="56dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_bell"
-                        android:tint="#666666" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Progress Updates"
-                        android:textSize="16sp"
-                        android:textColor="#333333"
-                        android:layout_marginStart="16dp" />
-
-                    <com.google.android.material.switchmaterial.SwitchMaterial
-                        android:id="@+id/switchProgressUpdates"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        app:thumbTint="@color/switch_thumb_selector"
-                        app:trackTint="@color/switch_track_selector" />
-                </LinearLayout>
             </LinearLayout>
 
             <!-- Reminder Settings Section -->
@@ -219,13 +194,14 @@
                         android:textColor="#333333"
                         android:layout_marginStart="16dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="9:00 AM"
-                        android:textSize="16sp"
-                        android:textColor="#666666"
-                        android:layout_marginEnd="8dp" />
+                                         <TextView
+                         android:id="@+id/tvReminderTime"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="9:00 AM"
+                         android:textSize="16sp"
+                         android:textColor="#666666"
+                         android:layout_marginEnd="8dp" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -266,13 +242,14 @@
                         android:textColor="#333333"
                         android:layout_marginStart="16dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Daily"
-                        android:textSize="16sp"
-                        android:textColor="#666666"
-                        android:layout_marginEnd="8dp" />
+                                         <TextView
+                         android:id="@+id/tvReminderFrequency"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Daily"
+                         android:textSize="16sp"
+                         android:textColor="#666666"
+                         android:layout_marginEnd="8dp" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -411,13 +388,14 @@
                         android:textColor="#333333"
                         android:layout_marginStart="16dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10:00 PM - 7:00 AM"
-                        android:textSize="16sp"
-                        android:textColor="#666666"
-                        android:layout_marginEnd="8dp" />
+                                         <TextView
+                         android:id="@+id/tvQuietHours"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="10:00 PM - 7:00 AM"
+                         android:textSize="16sp"
+                         android:textColor="#666666"
+                         android:layout_marginEnd="8dp" />
 
                     <ImageView
                         android:layout_width="20dp"
